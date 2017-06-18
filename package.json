@@ -1,0 +1,41 @@
+{
+  "name": "es6-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.13",
+    "gulp": "^3.9.1",
+    "node-notifier": "^5.0.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "browserify-shim"
+    ]
+  },
+  "babelify": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "browserify-shim": {
+    "vue": "global:Vue"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "compact": true
+  },
+  "author": "",
+  "license": "ISC"
+}
